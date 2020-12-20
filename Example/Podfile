@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'PROJBASEClasses_Example' do
+  pod 'PROJBASEClasses', :path => '../'
+
+  target 'PROJBASEClasses_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
