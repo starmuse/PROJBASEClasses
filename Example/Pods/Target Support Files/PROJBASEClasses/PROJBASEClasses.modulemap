@@ -1,0 +1,6 @@
+framework module PROJBASEClasses {
+  umbrella header "PROJBASEClasses-umbrella.h"
+
+  export *
+  module * { export * }
+}

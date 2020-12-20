@@ -1,0 +1,6 @@
+framework module Pods_PROJBASEClasses_Tests {
+  umbrella header "Pods-PROJBASEClasses_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

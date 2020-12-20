@@ -1,0 +1,30 @@
+{
+  "name": "PROJBASEClasses",
+  "version": "0.0.1",
+  "summary": "A short description of PROJBASEClasses.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/keith/PROJBASEClasses",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "keith": "153293947@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/keith/PROJBASEClasses.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "10.0"
+  },
+  "source_files": "PROJBASEClasses/Classes/**/*",
+  "dependencies": {
+    "Masonry": [
+
+    ],
+    "YYKit": [
+
+    ]
+  }
+}

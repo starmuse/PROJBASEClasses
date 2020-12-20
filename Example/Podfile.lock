@@ -1,0 +1,29 @@
+PODS:
+  - Masonry (1.1.0)
+  - PROJBASEClasses (0.0.1):
+    - Masonry
+    - YYKit
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+
+DEPENDENCIES:
+  - PROJBASEClasses (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - YYKit
+
+EXTERNAL SOURCES:
+  PROJBASEClasses:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  PROJBASEClasses: b9182974c17dc541d387a11120f740861c52cd59
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+
+PODFILE CHECKSUM: da7d3e4ef03f1865f5fe13d2625cec726294d34f
+
+COCOAPODS: 1.10.0

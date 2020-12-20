@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		17325442E970C8D6DB6D9DA7 /* Pods-PROJBASEClasses_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJBASEClasses_Example.debug.xcconfig"; path = "Target Support Files/Pods-PROJBASEClasses_Example/Pods-PROJBASEClasses_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		40DAEDCA59EC6487DA0C085B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		40DAEDCA59EC6487DA0C085B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		4CB1A44FBAD2AF287FBCE541 /* Pods-PROJBASEClasses_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJBASEClasses_Tests.release.xcconfig"; path = "Target Support Files/Pods-PROJBASEClasses_Tests/Pods-PROJBASEClasses_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4EE0FB15B2D9E33E0541FA84 /* Pods-PROJBASEClasses_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJBASEClasses_Tests.debug.xcconfig"; path = "Target Support Files/Pods-PROJBASEClasses_Tests/Pods-PROJBASEClasses_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		5995A0C70C433220DCEE65D0 /* Pods-PROJBASEClasses_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PROJBASEClasses_Example.release.xcconfig"; path = "Target Support Files/Pods-PROJBASEClasses_Example/Pods-PROJBASEClasses_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,9 +63,9 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		76516E157AC5D79F836639D3 /* PROJBASEClasses.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = PROJBASEClasses.podspec; path = ../PROJBASEClasses.podspec; sourceTree = "<group>"; };
+		76516E157AC5D79F836639D3 /* PROJBASEClasses.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = PROJBASEClasses.podspec; path = ../PROJBASEClasses.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D90CDA15A162A73FFAF82346 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D90CDA15A162A73FFAF82346 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		FFF013043AD39A3EA16BDC6D /* Pods_PROJBASEClasses_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PROJBASEClasses_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				4EE0FB15B2D9E33E0541FA84 /* Pods-PROJBASEClasses_Tests.debug.xcconfig */,
 				4CB1A44FBAD2AF287FBCE541 /* Pods-PROJBASEClasses_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -346,11 +346,15 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-PROJBASEClasses_Example/Pods-PROJBASEClasses_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/PROJBASEClasses/PROJBASEClasses.framework",
+				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PROJBASEClasses.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -497,6 +501,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PROJBASEClasses/PROJBASEClasses-Prefix.pch";
 				INFOPLIST_FILE = "PROJBASEClasses/PROJBASEClasses-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,6 +518,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "PROJBASEClasses/PROJBASEClasses-Prefix.pch";
 				INFOPLIST_FILE = "PROJBASEClasses/PROJBASEClasses-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
